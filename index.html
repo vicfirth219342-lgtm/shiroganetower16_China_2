@@ -362,6 +362,7 @@
     transition: transform 1.4s var(--ease);
   }
   .gallery__item:hover img{ transform: scale(1.06); }
+  .gallery__item{ cursor: zoom-in; }
   .gallery__item--wide{ grid-column: span 2; aspect-ratio: 16/10; }
   .gallery__caption{
     position:absolute;
@@ -454,6 +455,7 @@
     overflow:hidden;
     aspect-ratio: 4/3;
     background: var(--greige);
+    cursor: zoom-in;
   }
   .renovation-pair img{
     width:100%; height:100%;
@@ -527,11 +529,62 @@
     padding: 24px;
   }
   .lightbox.is-open{ display:flex; }
-  .lightbox img{
-    max-width: 100%;
-    max-height: 92vh;
+  .lightbox__inner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+  .lightbox__inner img{
+    display:block;
+    max-width: 90vw;
+    max-height: 80vh;
+    width:auto;
+    height:auto;
+    object-fit:contain;
     background: var(--white);
     padding: 12px;
+  }
+  .lightbox__caption{
+    margin-top: 18px;
+    text-align:center;
+    color: var(--white);
+  }
+  .lightbox__caption:empty{ display:none; margin:0; }
+  .lightbox__caption-main{
+    display:block;
+    font-family: var(--serif);
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+  }
+  .lightbox__caption-sub{
+    display:block;
+    margin-top: 6px;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    opacity:.6;
+  }
+  .lightbox__close{
+    position: fixed;
+    top: 20px; right: 24px;
+    width: 44px; height: 44px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(0,0,0,0.3);
+    color: var(--white);
+    font-size: 22px;
+    line-height: 1;
+    border-radius: 50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    z-index: 1000;
+    transition: background .3s var(--ease), border-color .3s var(--ease);
+  }
+  .lightbox__close:hover{
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.7);
   }
 
   /* ===================== OVERVIEW TABLE ===================== */
@@ -1086,7 +1139,11 @@
 </section>
 
 <div class="lightbox" id="lightbox">
-  <img src="floor_plan.png" alt="間取り図（拡大）">
+  <button class="lightbox__close" id="lightboxClose" type="button" aria-label="閉じる">&times;</button>
+  <div class="lightbox__inner">
+    <img id="lightboxImg" src="" alt="">
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
 </div>
 
 <!-- ============================================================ -->
@@ -1335,13 +1392,83 @@
   });
 
   /* ---------- Floor plan lightbox ---------- */
-  var trigger = document.getElementById('floorplanTrigger');
   var lightbox = document.getElementById('lightbox');
-  trigger.addEventListener('click', function(){
+  var lightboxImg = document.getElementById('lightboxImg');
+  var lightboxCaption = document.getElementById('lightboxCaption');
+  var lightboxClose = document.getElementById('lightboxClose');
+  var lightboxInner = lightbox.querySelector('.lightbox__inner');
+
+  function openLightbox(src, alt, mainCaption, subCaption){
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightboxCaption.innerHTML = '';
+    if (mainCaption){
+      var mainEl = document.createElement('span');
+      mainEl.className = 'lightbox__caption-main';
+      mainEl.textContent = mainCaption;
+      lightboxCaption.appendChild(mainEl);
+    }
+    if (subCaption){
+      var subEl = document.createElement('span');
+      subEl.className = 'lightbox__caption-sub';
+      subEl.textContent = subCaption;
+      lightboxCaption.appendChild(subEl);
+    }
     lightbox.classList.add('is-open');
-  });
-  lightbox.addEventListener('click', function(){
+  }
+
+  function closeLightbox(){
     lightbox.classList.remove('is-open');
+  }
+
+  /* Floor plan */
+  var floorplanTrigger = document.getElementById('floorplanTrigger');
+  floorplanTrigger.addEventListener('click', function(){
+    var img = floorplanTrigger.querySelector('img');
+    openLightbox(img.src, img.alt);
+  });
+
+  /* POSSIBILITIES: before / after photos */
+  document.querySelectorAll('.renovation-pair figure').forEach(function(fig){
+    fig.addEventListener('click', function(){
+      var img = fig.querySelector('img');
+      var figcaption = fig.querySelector('figcaption');
+      var label = fig.closest('.renovation-set').querySelector('.renovation-set__label');
+      openLightbox(
+        img.src,
+        img.alt,
+        label ? label.textContent.trim() : '',
+        figcaption ? figcaption.textContent.trim() : ''
+      );
+    });
+  });
+
+  /* GALLERY */
+  document.querySelectorAll('.gallery__item').forEach(function(item){
+    item.addEventListener('click', function(){
+      var img = item.querySelector('img');
+      var captionEn = item.querySelector('.gallery__caption-en');
+      var captionTag = item.querySelector('.gallery__caption-tag');
+      openLightbox(
+        img.src,
+        img.alt,
+        captionEn ? captionEn.textContent.trim() : '',
+        captionTag ? captionTag.textContent.trim() : ''
+      );
+    });
+  });
+
+  /* Close interactions */
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e){
+    if (!lightboxInner.contains(e.target)){
+      closeLightbox();
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && lightbox.classList.contains('is-open')){
+      closeLightbox();
+    }
   });
 
 })();
