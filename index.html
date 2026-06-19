@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="zh-TW">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>白金タワー｜白金高輪駅徒歩1分｜2LDK・68.24㎡</title>
-<meta name="description" content="白金高輪駅徒歩1分。白金タワー16階部分、2LDK・68.24㎡。2023年リフォーム済み。港区白金アドレスのタワーレジデンス。">
+<title>白金塔｜白金高輪站步行1分鐘｜2LDK・68.24㎡｜東京港區</title>
+<meta name="description" content="距白金高輪站步行1分鐘。白金塔16樓，2LDK・68.24㎡，2023年翻新完畢。東京港區白金地址的頂級塔式住宅。">
 
 <!-- OGP -->
-<meta property="og:title" content="白金タワー｜白金高輪駅徒歩1分｜2LDK・68.24㎡">
-<meta property="og:description" content="白金高輪駅徒歩1分。白金タワー16階部分、2LDK・68.24㎡。2023年リフォーム済み。港区白金アドレスのタワーレジデンス。">
+<meta property="og:title" content="白金塔｜白金高輪站步行1分鐘｜2LDK・68.24㎡">
+<meta property="og:description" content="距白金高輪站步行1分鐘。白金塔16樓，2LDK・68.24㎡，2023年翻新完畢。東京港區白金地址的頂級塔式住宅。">
 <meta property="og:type" content="website">
 <meta property="og:image" content="images/インテリア配置写真/living_image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="白金タワー｜白金高輪駅徒歩1分｜2LDK・68.24㎡">
-<meta name="twitter:description" content="白金高輪駅徒歩1分。白金タワー16階部分、2LDK・68.24㎡。2023年リフォーム済み。">
+<meta name="twitter:title" content="白金塔｜白金高輪站步行1分鐘｜2LDK・68.24㎡">
+<meta name="twitter:description" content="距白金高輪站步行1分鐘。白金塔16樓，2LDK・68.24㎡，2023年翻新完畢。">
 
 <!-- Vercel Analytics -->
 <script defer src="/_vercel/insights/script.js"></script>
-
-<!-- Google Analytics — YOUR_GA4_IDを差し替えてください -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
 
 <!-- Google Ads Conversion -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18240219163"></script>
@@ -50,8 +41,8 @@
   --ink:         #1A1A1A;
   --gray-dark:   #1E1E1E;
   --gray-mid:    #5C5C5C;
-  --serif: "Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
-  --sans:  "Hiragino Sans","Noto Sans JP","Helvetica Neue",Arial,sans-serif;
+  --serif: "Noto Serif TC","Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:  "Noto Sans TC","Noto Sans JP","Hiragino Sans","Helvetica Neue",Arial,sans-serif;
   --ease:  cubic-bezier(.22,.61,.36,1);
   --section-pad: clamp(80px,10vw,140px);
 }
@@ -127,13 +118,12 @@ a{ color:inherit;text-decoration:none; }
 @media(max-width:640px){ .header-cta{ display:none; } }
 
 /* =============================================
-   HERO  ─  multi-video crossfade
+   HERO
 ============================================= */
 #hero{
   position:relative;height:100svh;min-height:600px;
   display:flex;align-items:flex-end;overflow:hidden;
 }
-/* A/Bの2枚のvideoを重ねてクロスフェード */
 .hero-video{
   position:absolute;inset:0;width:100%;height:100%;
   object-fit:cover;
@@ -162,7 +152,7 @@ a{ color:inherit;text-decoration:none; }
   font-family:var(--serif);font-size:clamp(24px,3.8vw,52px);
   font-weight:400;line-height:1.65;letter-spacing:.06em;
   color:var(--white);margin-bottom:24px;
-  word-break:keep-all;overflow-wrap:normal;line-break:strict;
+  word-break:keep-all;overflow-wrap:normal;
   max-width:820px;
 }
 .hero-subtitle{
@@ -216,8 +206,6 @@ a{ color:inherit;text-decoration:none; }
   display:flex;justify-content:center;
   padding:0 clamp(20px,5vw,80px);
 }
-/* 9:16縦動画コンテナ */
-/* ここにYouTube Shorts動画URLを設定 */
 .cinema-video-inner{
   width:min(360px,90vw);
   aspect-ratio:9/16;
@@ -234,7 +222,7 @@ a{ color:inherit;text-decoration:none; }
 }
 
 /* =============================================
-   ACCESS (light section)
+   ACCESS
 ============================================= */
 #access{
   background:var(--off-white);
@@ -291,6 +279,68 @@ a{ color:inherit;text-decoration:none; }
   color:rgba(255,255,255,.78);letter-spacing:.04em;line-height:1.7;
 }
 @media(max-width:768px){ #brand .inner{ grid-template-columns:1fr; } }
+
+/* =============================================
+   SHIROKANE AREA (新追加)
+============================================= */
+#shirokane-area{
+  background:var(--off-white);
+  padding:var(--section-pad) clamp(24px,6vw,100px);
+}
+#shirokane-area .inner{
+  max-width:min(1200px,90vw);margin-inline:auto;
+}
+#shirokane-area .section-heading{ color:var(--ink); }
+#shirokane-area .section-label{ color:var(--gold-dark); }
+#shirokane-area .gold-line{ background:var(--gold-dark); }
+.shirokane-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:clamp(16px,2vw,28px);
+  margin-top:clamp(40px,5vw,64px);
+}
+.shirokane-card{
+  background:#fff;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 2px 16px rgba(0,0,0,.07),0 0 0 1px rgba(0,0,0,.04);
+  display:flex;flex-direction:column;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease);
+}
+.shirokane-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 48px rgba(0,0,0,.10),0 0 0 1px rgba(168,136,62,.18);
+}
+.shirokane-card-img{
+  width:100%;aspect-ratio:1/1;
+  background:#f4f2ee;
+  display:flex;align-items:center;justify-content:center;
+  padding:clamp(20px,3vw,36px);
+  border-bottom:1px solid rgba(168,136,62,.12);
+}
+.shirokane-card-img img{
+  width:100%;height:100%;object-fit:contain;
+  display:block;
+}
+.shirokane-card-body-wrap{
+  padding:clamp(20px,2.5vw,30px) clamp(18px,2vw,26px) clamp(22px,2.8vw,34px);
+  display:flex;flex-direction:column;gap:10px;
+  flex:1;
+}
+.shirokane-card-num{
+  font-family:var(--sans);font-size:10px;letter-spacing:.28em;
+  color:var(--gold-dark);font-weight:400;
+}
+.shirokane-card-title{
+  font-family:var(--serif);font-size:clamp(14px,1.5vw,17px);
+  color:var(--ink);font-weight:400;line-height:1.45;letter-spacing:.04em;
+}
+.shirokane-card-desc{
+  font-family:var(--sans);font-size:clamp(11px,1.1vw,12.5px);
+  color:var(--gray-mid);line-height:1.9;letter-spacing:.02em;margin-top:4px;
+}
+@media(max-width:1024px){ .shirokane-grid{ grid-template-columns:repeat(2,1fr); } }
+@media(max-width:540px)  { .shirokane-grid{ grid-template-columns:1fr; }
+  .shirokane-card-img{ aspect-ratio:3/2; } }
 
 /* =============================================
    REFORM
@@ -355,7 +405,7 @@ a{ color:inherit;text-decoration:none; }
 }
 
 /* =============================================
-   COMMON AREAS  (共用部)
+   COMMON AREAS
 ============================================= */
 #common{
   background:var(--gray-dark);
@@ -379,7 +429,7 @@ a{ color:inherit;text-decoration:none; }
 @media(max-width:600px){ .common-grid{ grid-template-columns:1fr; } }
 
 /* =============================================
-   SPECS — Luxury Card Redesign
+   SPECS
 ============================================= */
 #specs {
   background: #F7F5F2;
@@ -469,7 +519,7 @@ a{ color:inherit;text-decoration:none; }
 @media(max-width:400px)  { .specs-grid-luxury { grid-template-columns: 1fr; } }
 
 /* =============================================
-   AREA (neighborhood)
+   AREA
 ============================================= */
 #area{
   background:var(--black);
@@ -623,6 +673,39 @@ a{ color:inherit;text-decoration:none; }
 textarea.form-input{ resize:vertical;min-height:120px; }
 .form-submit{ width:100%;padding:20px;font-size:13px;letter-spacing:.2em;margin-top:10px; }
 
+/* WeChat Box */
+.wechat-box{
+  margin-top:52px;
+  border:1px solid rgba(197,165,90,.3);
+  padding:clamp(28px,4vw,44px);
+  text-align:center;
+}
+.wechat-box-label{
+  font-family:var(--sans);font-size:10px;letter-spacing:.3em;
+  color:var(--gold);margin-bottom:16px;display:block;
+}
+.wechat-box-title{
+  font-family:var(--serif);font-size:clamp(16px,2vw,22px);
+  color:var(--white);margin-bottom:14px;letter-spacing:.04em;
+}
+.wechat-box-desc{
+  font-family:var(--serif);font-size:clamp(13px,1.4vw,14px);
+  color:rgba(255,255,255,.65);line-height:2;margin-bottom:22px;
+}
+.wechat-id-block{
+  display:inline-flex;flex-direction:column;align-items:center;gap:6px;
+  background:rgba(255,255,255,.04);border:1px solid rgba(197,165,90,.2);
+  padding:18px 32px;
+}
+.wechat-id-name{
+  font-family:var(--serif);font-size:clamp(13px,1.5vw,15px);
+  color:rgba(255,255,255,.7);letter-spacing:.06em;
+}
+.wechat-id-val{
+  font-family:var(--sans);font-size:clamp(16px,2vw,20px);
+  color:var(--gold);letter-spacing:.12em;font-weight:400;
+}
+
 /* success / error modal */
 #success-modal,
 #error-modal{
@@ -648,12 +731,64 @@ textarea.form-input{ resize:vertical;min-height:120px; }
 .success-close:hover{ background:var(--gold);color:var(--black); }
 
 /* =============================================
+   COMPANY INFO
+============================================= */
+#company{
+  background:var(--ink);
+  padding:var(--section-pad) clamp(24px,6vw,100px);
+  border-top:1px solid rgba(197,165,90,.12);
+}
+#company .inner{
+  display:grid;grid-template-columns:auto 1fr;
+  gap:clamp(40px,6vw,80px);align-items:start;
+}
+.company-logo-wrap{
+  display:flex;flex-direction:column;align-items:flex-start;gap:14px;
+}
+.company-logo-wrap img{
+  width:clamp(160px,20vw,220px);filter:brightness(0) invert(1);opacity:.85;
+}
+.company-license{
+  font-family:var(--sans);font-size:10px;letter-spacing:.08em;
+  color:rgba(255,255,255,.4);line-height:1.7;
+}
+.company-details{
+  display:flex;flex-direction:column;gap:22px;
+}
+.company-name{
+  font-family:var(--serif);font-size:clamp(18px,2.5vw,26px);
+  color:var(--gold);letter-spacing:.1em;
+}
+.company-tagline{
+  font-family:var(--serif);font-size:clamp(12px,1.4vw,14px);
+  color:rgba(255,255,255,.5);letter-spacing:.06em;margin-top:4px;
+}
+.company-table{
+  width:100%;border-collapse:collapse;font-family:var(--serif);
+}
+.company-table tr{ border-bottom:1px solid rgba(255,255,255,.06); }
+.company-table th{
+  width:120px;padding:13px 0;font-size:clamp(11px,1.2vw,12px);
+  font-weight:400;color:rgba(255,255,255,.38);letter-spacing:.08em;
+  text-align:left;vertical-align:top;
+}
+.company-table td{
+  padding:13px 0 13px 16px;font-size:clamp(12px,1.3vw,13px);
+  color:rgba(255,255,255,.68);letter-spacing:.04em;line-height:1.7;
+}
+.company-table a{ color:var(--gold-light); }
+@media(max-width:768px){
+  #company .inner{ grid-template-columns:1fr; }
+  .company-logo-wrap{ align-items:flex-start; }
+}
+
+/* =============================================
    FOOTER
 ============================================= */
 footer{
   background:var(--ink);
   padding:56px clamp(24px,6vw,100px) 36px;
-  border-top:1px solid rgba(197,165,90,.12);
+  border-top:1px solid rgba(197,165,90,.08);
 }
 .footer-inner{
   display:grid;grid-template-columns:1fr 1fr;
@@ -737,19 +872,17 @@ footer{
 <!-- ===== HEADER ===== -->
 <header id="site-header">
   <div class="header-logo">
-    白金タワー
+    白金塔
     <span>SHIROKANEDAI TOWER</span>
   </div>
   <nav class="header-cta">
-    <a href="#contact" class="btn btn-outline" onclick="trackCTA('header-inquiry')">お問い合わせ</a>
-    <a href="#contact" class="btn btn-gold"    onclick="trackCTA('header-viewing')">内見予約</a>
+    <a href="#contact" class="btn btn-outline" onclick="trackCTA('header-inquiry')">諮詢</a>
+    <a href="#contact" class="btn btn-gold"    onclick="trackCTA('header-viewing')">預約看房</a>
   </nav>
 </header>
 
 <!-- ===== HERO ===== -->
 <section id="hero">
-  <!-- ヒーロー背景：4本の動画をクロスフェードでループ再生 -->
-  <!-- videoA / videoB を交互に使いなめらかに切り替え -->
   <video id="hero-vid-a" class="hero-video active" muted playsinline preload="auto"
     poster="images/インテリア配置写真/living_image.png">
     <source src="images/インテリア配置写真/hero_video1.mp4" type="video/mp4">
@@ -761,15 +894,15 @@ footer{
   <div class="hero-content">
     <div class="hero-badge">SHIROKANEDAI TOWER｜16F｜MINATO-KU, TOKYO</div>
     <h1 class="hero-title">
-      白金高輪駅徒歩1分。<br>
-      空へ伸びる、都心のレジデンス。
+      距白金高輪站步行1分鐘。<br>
+      伸向蒼穹的都心宅邸。
     </h1>
-    <p class="hero-subtitle">白金タワー｜16階部分｜2LDK｜68.24㎡｜23,980万円</p>
-    <p class="hero-reform">2023年リフォーム済み。購入後の負担を抑えながら、新しい暮らしを始めやすい住まい。</p>
+    <p class="hero-subtitle">白金塔｜16樓｜2LDK｜68.24㎡｜2億3,980萬日圓</p>
+    <p class="hero-reform">2023年翻新完畢。購入後可直接入住，開啟全新生活。</p>
     <div class="hero-btns">
-      <a href="#contact" class="btn btn-gold"    onclick="trackCTA('hero-brochure')">資料請求</a>
-      <a href="#contact" class="btn btn-outline" onclick="trackCTA('hero-viewing')">内見予約</a>
-      <a href="#contact" class="btn btn-outline" onclick="trackCTA('hero-inquiry')">お問い合わせ</a>
+      <a href="#contact" class="btn btn-gold"    onclick="trackCTA('hero-brochure')">索取資料</a>
+      <a href="#contact" class="btn btn-outline" onclick="trackCTA('hero-viewing')">預約看房</a>
+      <a href="#contact" class="btn btn-outline" onclick="trackCTA('hero-inquiry')">立即諮詢</a>
     </div>
   </div>
   <div class="hero-scroll">SCROLL</div>
@@ -780,33 +913,21 @@ footer{
   <div class="inner">
     <div class="cinema-header fade-up">
       <span class="section-label">ROOM CINEMA</span>
-      <h2 class="cinema-title">まずは、この住まいを<br>歩いてみてください。</h2>
+      <h2 class="cinema-title">請先漫步其中，<br>感受這個家的空間。</h2>
       <div class="gold-line" style="margin-inline:auto;"></div>
       <p class="cinema-desc">
-        写真だけでは伝わらない空間の広がり。<br>
-        窓から見える景色、部屋を移動したときの視点、光の入り方、白金高輪という街の空気感。<br>
-        ROOM CINEMAによるルームツアー映像で、実際に内見しているような体験をお楽しみください。
+        照片無法完整傳達的空間層次感。<br>
+        窗外的景致、移動視角時的開闊感、光線的流動，以及白金高輪這條街道特有的靜謐氛圍。<br>
+        透過 ROOM CINEMA 的室內導覽影片，體驗如同親臨現場的看房感受。
       </p>
     </div>
 
     <div class="cinema-video-wrap fade-up">
       <div class="cinema-video-inner">
-        <!--
-          ここにYouTube Shorts動画URLを設定
-          動画ID: lAEytdS0mnE
-          差し替え時はsrc内のIDを変更してください
-        -->
-        <!--
-          ここにYouTube Shorts動画URLを設定
-          動画ID: lAEytdS0mnE
-          差し替え時はsrc内のIDのみ変更してください
-          ※ Shorts URL (youtube.com/shorts/...) はそのまま使用不可。
-             必ず embed 形式: https://www.youtube-nocookie.com/embed/VIDEO_ID
-        -->
         <iframe
           id="room-cinema-video"
-          src="https://www.youtube-nocookie.com/embed/lAEytdS0mnE?rel=0&playsinline=1&enablejsapi=1&origin=https://shirokane-tower.vercel.app"
-          title="白金タワー ルームツアー｜ROOM CINEMA"
+          src="https://www.youtube-nocookie.com/embed/FIyGidck8PY?rel=0&playsinline=1&enablejsapi=1&origin=https://shiroganetower16-china-2.vercel.app"
+          title="白金塔 室內導覽｜ROOM CINEMA"
           loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -816,9 +937,9 @@ footer{
     </div>
 
     <div class="cinema-cta fade-up">
-      <a href="#contact" class="btn btn-gold"    onclick="trackCTA('cinema-brochure')">資料請求する</a>
-      <a href="#contact" class="btn btn-outline" onclick="trackCTA('cinema-viewing')">内見を予約する</a>
-      <a href="#contact" class="btn btn-outline" onclick="trackCTA('cinema-inquiry')">問い合わせる</a>
+      <a href="#contact" class="btn btn-gold"    onclick="trackCTA('cinema-brochure')">索取資料</a>
+      <a href="#contact" class="btn btn-outline" onclick="trackCTA('cinema-viewing')">預約看房</a>
+      <a href="#contact" class="btn btn-outline" onclick="trackCTA('cinema-inquiry')">立即諮詢</a>
     </div>
   </div>
 </section>
@@ -828,36 +949,36 @@ footer{
   <div class="inner">
     <div class="access-text fade-up">
       <span class="section-label">ACCESS</span>
-      <h2 class="section-heading">駅徒歩1分という、<br>日常の贅沢。</h2>
+      <h2 class="section-heading">步行1分鐘，<br>日常即是奢華。</h2>
       <div class="gold-line"></div>
       <p class="section-body">
-        白金高輪駅徒歩1分。<br>
-        雨の日も、暑い日も、忙しい朝も。<br>
-        駅近だからこそ実現できる快適な毎日。<br>
-        都心へのアクセスと、白金らしい落ち着き。<br>
-        その両方を手に入れる暮らし。
+        距白金高輪站步行僅需1分鐘。<br>
+        雨天、炎夏、繁忙的清晨，都無需在意。<br>
+        近站的便利，讓每一天從容舒適。<br>
+        都心的機能與白金特有的靜謐，<br>
+        在此同時兼得。
       </p>
     </div>
     <div class="access-stat fade-up">
       <div class="access-stat-item">
         <div class="access-stat-num">1</div>
         <div class="access-stat-sub">
-          <span class="access-stat-unit">分</span>
-          <span class="access-stat-label">白金高輪駅（徒歩）</span>
+          <span class="access-stat-unit">分鐘</span>
+          <span class="access-stat-label">白金高輪站（步行）</span>
         </div>
       </div>
       <div class="access-stat-item">
         <div class="access-stat-num">16</div>
         <div class="access-stat-sub">
-          <span class="access-stat-unit">階</span>
-          <span class="access-stat-label">42階建タワー高層住戸</span>
+          <span class="access-stat-unit">樓</span>
+          <span class="access-stat-label">42層塔式住宅高層戶型</span>
         </div>
       </div>
       <div class="access-stat-item">
         <div class="access-stat-num" style="font-size:clamp(36px,4.5vw,56px);">68<span style="font-size:.55em">.24</span></div>
         <div class="access-stat-sub">
           <span class="access-stat-unit">㎡</span>
-          <span class="access-stat-label">2LDK 専有面積</span>
+          <span class="access-stat-label">2LDK 專有面積</span>
         </div>
       </div>
     </div>
@@ -868,19 +989,76 @@ footer{
 <section id="brand">
   <div class="inner">
     <div class="brand-img-wrap fade-up">
-      <img src="images/周辺写真/overview.png" alt="白金タワー 外観・周辺">
+      <img src="images/周辺写真/overview.png" alt="白金塔 外觀・周邊">
     </div>
     <div class="fade-up">
       <span class="section-label">ABOUT THE TOWER</span>
-      <h2 class="section-heading">港区白金を象徴する<br>タワーレジデンス。</h2>
+      <h2 class="section-heading">象徵港區白金的<br>頂級塔式住宅。</h2>
       <div class="gold-line"></div>
       <div class="brand-points">
-        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">581戸の大規模タワーレジデンス</div></div>
-        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">鹿島建設施工の堅牢なRC造構造</div></div>
-        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">白金高輪駅徒歩1分の圧倒的立地</div></div>
-        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">24時間セキュリティ・防犯カメラ完備</div></div>
-        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">フィットネス施設・共用ラウンジ</div></div>
-        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">宅配ボックス・常時ゴミ出し可能</div></div>
+        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">581戶大規模塔式住宅</div></div>
+        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">鹿島建設施工，堅固的RC鋼筋混凝土結構</div></div>
+        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">距白金高輪站步行1分鐘的絕佳地段</div></div>
+        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">24小時保全・完善監控設備</div></div>
+        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">健身設施・公共休息廳</div></div>
+        <div class="brand-point"><div class="brand-point-icon">✦</div><div class="brand-point-text">包裹快遞箱・全天候垃圾投放</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SHIROKANE AREA ===== -->
+<section id="shirokane-area">
+  <div class="inner">
+    <div class="fade-up">
+      <span class="section-label">WHY SHIROKANE</span>
+      <h2 class="section-heading" style="color:var(--ink);">為什麼選擇白金（Shirokane）</h2>
+      <div class="gold-line" style="background:var(--gold-dark);"></div>
+      <p style="font-family:var(--serif);font-size:clamp(13px,1.5vw,15px);color:var(--gray-mid);line-height:2.2;max-width:700px;">
+        對於台灣、香港的朋友而言，「白金」這個地名或許尚不熟悉。<br>
+        然而在東京，這裡是長年受到各界矚目的高級住宅地，是真正懂得生活品質的人所選擇的地方。
+      </p>
+    </div>
+    <div class="shirokane-grid fade-up">
+      <div class="shirokane-card">
+        <div class="shirokane-card-img">
+          <img src="images/zh_01_luxury.jpeg" alt="高級住宅街">
+        </div>
+        <div class="shirokane-card-body-wrap">
+          <div class="shirokane-card-num">01</div>
+          <div class="shirokane-card-title">東京屈指可數的<br>高級住宅街</div>
+          <div class="shirokane-card-desc">白金（Shirokane）位於東京港區，與麻布、廣尾並列為都內頂級住宅地。沈穩的街道氛圍與精緻的生活環境，令其地位歷久不衰。</div>
+        </div>
+      </div>
+      <div class="shirokane-card">
+        <div class="shirokane-card-img">
+          <img src="images/zh_02_embassy.jpeg" alt="大使館雲集的國際化街區">
+        </div>
+        <div class="shirokane-card-body-wrap">
+          <div class="shirokane-card-num">02</div>
+          <div class="shirokane-card-title">大使館雲集的<br>國際化街區</div>
+          <div class="shirokane-card-desc">港區匯聚眾多各國大使館與外交官邸，是東京國際化程度最高的地區之一。安靜整潔的街道，與都心繁華保持恰到好處的距離感。</div>
+        </div>
+      </div>
+      <div class="shirokane-card">
+        <div class="shirokane-card-img">
+          <img src="images/zh_03_nature.jpeg" alt="都心便利與自然環境兼得">
+        </div>
+        <div class="shirokane-card-body-wrap">
+          <div class="shirokane-card-num">03</div>
+          <div class="shirokane-card-title">都心便利與<br>自然環境兼得</div>
+          <div class="shirokane-card-desc">可搭乘東京Metro南北線與都營三田線直達六本木、大手町等主要地區。步行即可抵達有栖川宮記念公園及自然教育園，在都市中享有罕見的綠意。</div>
+        </div>
+      </div>
+      <div class="shirokane-card">
+        <div class="shirokane-card-img">
+          <img src="images/zh_04_affluent.jpeg" alt="長期受富裕階層青睞的資產地址">
+        </div>
+        <div class="shirokane-card-body-wrap">
+          <div class="shirokane-card-num">04</div>
+          <div class="shirokane-card-title">長期受富裕階層<br>青睞的資產地址</div>
+          <div class="shirokane-card-desc">港區白金地址在日本不動產市場中，長年維持穩定的資產價值，是海外投資者與高淨值人士在東京置產時的重要選擇之一。</div>
+        </div>
       </div>
     </div>
   </div>
@@ -890,17 +1068,17 @@ footer{
 <section id="reform">
   <div class="inner">
     <div class="reform-img fade-up">
-      <img src="images/現状写真/kitchen.png" alt="キッチン 現況">
+      <img src="images/現状写真/kitchen.png" alt="廚房 現況">
     </div>
     <div class="fade-up">
-      <div class="reform-badge">2023年リフォーム済み</div>
+      <div class="reform-badge">2023年翻新完畢</div>
       <span class="section-label">REFORM</span>
-      <h2 class="section-heading">手を加えるより、<br>すぐに暮らす。</h2>
+      <h2 class="section-heading">無需再整修，<br>即可開始新生活。</h2>
       <div class="gold-line"></div>
       <p class="section-body">
-        2023年にリフォーム済み。<br>
-        購入後に大きなリフォーム工事を検討する必要が少なく、比較的スムーズに新生活をスタートしやすい住まい。<br><br>
-        初期費用を抑えながら、白金高輪徒歩1分のタワーレジデンスという価値を手に入れることができます。
+        2023年翻新完畢。<br>
+        購入後無需立即進行大型裝修工程，可較順暢地開始新生活。<br><br>
+        在壓低初期費用的同時，擁有白金高輪步行1分鐘的頂級塔式住宅價值。
       </p>
     </div>
   </div>
@@ -910,51 +1088,50 @@ footer{
 <section id="rooms">
   <div class="rooms-header inner fade-up">
     <span class="section-label">ROOM TOUR</span>
-    <h2 class="section-heading">68.24㎡に描く、<br>上質な都心生活。</h2>
+    <h2 class="section-heading">68.24㎡，<br>描繪上質都心生活。</h2>
     <div class="gold-line" style="margin-inline:auto;"></div>
   </div>
 
   <div class="rooms-grid">
-    <!-- 現況写真 -->
     <div class="room-card large" onclick="openLB('images/現状写真/livingdininng.png',gAll)">
-      <img src="images/現状写真/livingdininng.png" alt="リビングダイニング 現況" loading="lazy">
+      <img src="images/現状写真/livingdininng.png" alt="客廳餐廳 現況" loading="lazy">
       <div class="room-card-overlay"></div>
       <div class="room-card-label">
-        <div class="room-card-name">リビングダイニング</div>
+        <div class="room-card-name">客廳餐廳</div>
         <div class="room-card-en">LIVING & DINING</div>
       </div>
     </div>
     <div class="room-card" onclick="openLB('images/インテリア配置写真/living_image.png',gAll)">
-      <img src="images/インテリア配置写真/living_image.png" alt="リビング 家具配置イメージ" loading="lazy">
+      <img src="images/インテリア配置写真/living_image.png" alt="客廳 家具配置示意圖" loading="lazy">
       <div class="room-card-overlay"></div>
       <div class="room-card-label">
-        <div class="room-card-name">リビング</div>
+        <div class="room-card-name">客廳</div>
         <div class="room-card-en">LIVING ROOM</div>
       </div>
-      <div class="room-card-badge">家具配置イメージ</div>
+      <div class="room-card-badge">家具配置示意圖</div>
     </div>
     <div class="room-card" onclick="openLB('images/現状写真/bedroom.png',gAll)">
-      <img src="images/現状写真/bedroom.png" alt="主寝室 現況" loading="lazy">
+      <img src="images/現状写真/bedroom.png" alt="主臥室 現況" loading="lazy">
       <div class="room-card-overlay"></div>
       <div class="room-card-label">
-        <div class="room-card-name">主寝室</div>
+        <div class="room-card-name">主臥室</div>
         <div class="room-card-en">MASTER BEDROOM</div>
       </div>
     </div>
     <div class="room-card" onclick="openLB('images/インテリア配置写真/bedroom_image.png',gAll)">
-      <img src="images/インテリア配置写真/bedroom_image.png" alt="寝室 家具配置イメージ" loading="lazy">
+      <img src="images/インテリア配置写真/bedroom_image.png" alt="臥室 家具配置示意圖" loading="lazy">
       <div class="room-card-overlay"></div>
       <div class="room-card-label">
-        <div class="room-card-name">寝室</div>
+        <div class="room-card-name">臥室</div>
         <div class="room-card-en">BEDROOM</div>
       </div>
-      <div class="room-card-badge">家具配置イメージ</div>
+      <div class="room-card-badge">家具配置示意圖</div>
     </div>
     <div class="room-card" onclick="openLB('images/現状写真/kitchen.png',gAll)">
-      <img src="images/現状写真/kitchen.png" alt="キッチン 現況" loading="lazy">
+      <img src="images/現状写真/kitchen.png" alt="廚房 現況" loading="lazy">
       <div class="room-card-overlay"></div>
       <div class="room-card-label">
-        <div class="room-card-name">キッチン</div>
+        <div class="room-card-name">廚房</div>
         <div class="room-card-en">KITCHEN</div>
       </div>
     </div>
@@ -967,18 +1144,18 @@ footer{
       </div>
     </div>
     <div class="room-card large" onclick="openLB('images/現状写真/view.png',gAll)">
-      <img src="images/現状写真/view.png" alt="眺望" loading="lazy">
+      <img src="images/現状写真/view.png" alt="景觀" loading="lazy">
       <div class="room-card-overlay"></div>
       <div class="room-card-label">
-        <div class="room-card-name">眺望</div>
+        <div class="room-card-name">景觀</div>
         <div class="room-card-en">VIEW FROM 16F</div>
       </div>
     </div>
     <div class="room-card" onclick="openLB('images/現状写真/balcony.png',gAll)">
-      <img src="images/現状写真/balcony.png" alt="バルコニー 現況" loading="lazy">
+      <img src="images/現状写真/balcony.png" alt="陽台 現況" loading="lazy">
       <div class="room-card-overlay"></div>
       <div class="room-card-label">
-        <div class="room-card-name">バルコニー</div>
+        <div class="room-card-name">陽台</div>
         <div class="room-card-en">BALCONY</div>
       </div>
     </div>
@@ -990,22 +1167,22 @@ footer{
   <div class="inner">
     <div class="fade-up">
       <span class="section-label">COMMON FACILITIES</span>
-      <h2 class="section-heading">ホテルライクな<br>共用施設。</h2>
+      <h2 class="section-heading">飯店品質的<br>公共設施。</h2>
       <div class="gold-line"></div>
-      <p class="section-body">エントランスからラウンジ、フィットネスまで。<br>日々の暮らしに豊かさを添える、充実した共用空間。</p>
+      <p class="section-body">從大廳入口到休息廳、健身房。<br>為日常生活增添從容與豐富的充實公共空間。</p>
     </div>
     <div class="common-grid">
       <div class="common-img" onclick="openLB('images/共用部分/entrance.png',gCommon)">
-        <img src="images/共用部分/entrance.png" alt="エントランス" loading="lazy">
-        <div class="common-label">エントランス</div>
+        <img src="images/共用部分/entrance.png" alt="大廳入口" loading="lazy">
+        <div class="common-label">大廳入口</div>
       </div>
       <div class="common-img" onclick="openLB('images/共用部分/raunge.png',gCommon)">
-        <img src="images/共用部分/raunge.png" alt="ラウンジ" loading="lazy">
-        <div class="common-label">ラウンジ</div>
+        <img src="images/共用部分/raunge.png" alt="休息廳" loading="lazy">
+        <div class="common-label">休息廳</div>
       </div>
       <div class="common-img" onclick="openLB('images/共用部分/sportsgim.png',gCommon)">
-        <img src="images/共用部分/sportsgim.png" alt="フィットネス" loading="lazy">
-        <div class="common-label">フィットネス</div>
+        <img src="images/共用部分/sportsgim.png" alt="健身房" loading="lazy">
+        <div class="common-label">健身房</div>
       </div>
     </div>
   </div>
@@ -1016,130 +1193,103 @@ footer{
   <div class="inner">
     <div class="specs-header">
       <span class="section-label">EQUIPMENT</span>
-      <h2 class="section-heading">設備仕様</h2>
+      <h2 class="section-heading">設備規格</h2>
       <div class="gold-line"></div>
-      <p class="specs-lead">快適で安心な暮らしを支える、<br>充実の設備・仕様。</p>
+      <p class="specs-lead">支撐舒適安心生活的<br>完善設備與規格。</p>
     </div>
 
     <div class="specs-grid-luxury">
-
-      <!-- 床暖房 -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8a4 4 0 0 0 8 0c0-4-4-8-4-8z"/><path d="M12 12v4"/><path d="M8 18h8"/><path d="M6 21h12"/></svg>
         </div>
-        <div class="spec-card-name">床暖房</div>
-        <div class="spec-card-desc">足元から部屋全体を優しく暖める。寒い朝も快適な室内環境を実現。</div>
+        <div class="spec-card-name">地板暖氣</div>
+        <div class="spec-card-desc">從腳底溫暖整個房間。寒冷清晨也能保持舒適的室內環境。</div>
       </div>
-
-      <!-- 浴室乾燥機 -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.57a1 1 0 0 0 .99.84H7v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V10h3.15a1 1 0 0 0 .99-.84l.58-3.57a2 2 0 0 0-1.34-2.23z"/></svg>
         </div>
-        <div class="spec-card-name">浴室乾燥機</div>
-        <div class="spec-card-desc">雨の日も花粉の季節も安心。浴室内で洗濯物をしっかり乾燥できます。</div>
+        <div class="spec-card-name">浴室烘乾機</div>
+        <div class="spec-card-desc">雨天或花粉季節也無需擔心。可在浴室內確實烘乾衣物。</div>
       </div>
-
-      <!-- 追焚機能 -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M2 6c.6.5 1 1 1 2s-.4 1.5-1 2c.6.5 1 1 1 2s-.4 1.5-1 2"/><path d="M7 6c.6.5 1 1 1 2s-.4 1.5-1 2c.6.5 1 1 1 2s-.4 1.5-1 2"/><path d="M12 6c.6.5 1 1 1 2s-.4 1.5-1 2c.6.5 1 1 1 2s-.4 1.5-1 2"/><path d="M17 8h5"/><path d="M17 12h5"/><path d="M17 16h5"/></svg>
         </div>
-        <div class="spec-card-name">追焚機能</div>
-        <div class="spec-card-desc">いつでも適温のお湯を保持。ゆったりとした入浴時間をお楽しみいただけます。</div>
+        <div class="spec-card-name">浴缸追加加熱</div>
+        <div class="spec-card-desc">隨時保持適溫熱水。盡情享受舒適的泡澡時光。</div>
       </div>
-
-      <!-- 食器洗浄乾燥機 -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg>
         </div>
-        <div class="spec-card-name">食器洗浄乾燥機</div>
-        <div class="spec-card-desc">食後の後片付けを自動化。家事の時間を豊かな時間へと変えます。</div>
+        <div class="spec-card-name">洗碗烘乾機</div>
+        <div class="spec-card-desc">自動化飯後清洗工作。讓家事時間轉化為更有品質的生活時光。</div>
       </div>
-
-      <!-- 3口以上コンロ -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><circle cx="6" cy="8" r="2"/><circle cx="12" cy="8" r="2"/><circle cx="18" cy="8" r="2"/><path d="M4 14h16"/><path d="M4 18h16"/><path d="M4 14v-2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2"/><path d="M4 18v1a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1"/></svg>
         </div>
-        <div class="spec-card-name">3口以上コンロ</div>
-        <div class="spec-card-desc">複数の料理を同時進行。ゆとりある本格的なキッチン環境を提供。</div>
+        <div class="spec-card-name">三口以上爐具</div>
+        <div class="spec-card-desc">多道料理同時進行。提供從容的頂級廚房環境。</div>
       </div>
-
-      <!-- システムキッチン -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M7 4v6"/></svg>
         </div>
-        <div class="spec-card-name">システムキッチン</div>
-        <div class="spec-card-desc">機能美と収納力を兼ね備えた高品位なシステムキッチンを採用。</div>
+        <div class="spec-card-name">系統廚房</div>
+        <div class="spec-card-desc">兼具美觀機能與充裕收納的高品質系統廚房。</div>
       </div>
-
-      <!-- ウォークインクローゼット -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M12 3v18"/><path d="M7 8h2"/><path d="M15 8h2"/><path d="M7 12h2"/><path d="M15 12h2"/></svg>
         </div>
-        <div class="spec-card-name">ウォークイン<br>クローゼット</div>
-        <div class="spec-card-desc">ゆとりある収納空間で、衣類や荷物を美しく整理整頓できます。</div>
+        <div class="spec-card-name">更衣室<br>（Walk-in Closet）</div>
+        <div class="spec-card-desc">寬裕的收納空間，讓衣物與生活用品整齊有序。</div>
       </div>
-
-      <!-- シューズインクローゼット -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M3 7h18"/><path d="M3 12h18"/><path d="M5 7V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v2"/><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>
         </div>
-        <div class="spec-card-name">シューズイン<br>クローゼット</div>
-        <div class="spec-card-desc">玄関をいつもすっきりと保てる独立した靴収納スペース。</div>
+        <div class="spec-card-name">玄關收納間</div>
+        <div class="spec-card-desc">獨立的鞋靴收納空間，讓玄關時刻保持整潔美觀。</div>
       </div>
-
-      <!-- 宅配ボックス -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16v-2"/><path d="M7.5 4.27l9 5.15"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" y1="22" x2="12" y2="12"/><circle cx="18.5" cy="15.5" r="2.5"/><path d="M20.27 17.27L22 19"/></svg>
         </div>
-        <div class="spec-card-name">宅配ボックス</div>
-        <div class="spec-card-desc">不在時も荷物を安全に受け取れる大型宅配ボックスを完備。</div>
+        <div class="spec-card-name">包裹快遞箱</div>
+        <div class="spec-card-desc">不在家時也能安全收取包裹的大型快遞箱。</div>
       </div>
-
-      <!-- 24時間セキュリティ -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <div class="spec-card-name">24時間<br>セキュリティ</div>
-        <div class="spec-card-desc">プロの警備員が24時間常駐。安心・安全な居住環境を提供します。</div>
+        <div class="spec-card-name">24小時<br>保全</div>
+        <div class="spec-card-desc">專業保全人員24小時常駐，提供安心安全的居住環境。</div>
       </div>
-
-      <!-- 防犯カメラ -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
         </div>
-        <div class="spec-card-name">防犯カメラ</div>
-        <div class="spec-card-desc">共用部の主要箇所に防犯カメラを設置。24時間の安全を見守ります。</div>
+        <div class="spec-card-name">安全監控</div>
+        <div class="spec-card-desc">公共區域主要位置設有監控攝影機，全天候守護安全。</div>
       </div>
-
-      <!-- フィットネス施設 -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><path d="M6.5 6.5h11"/><path d="M6.5 17.5h11"/><path d="M3 9v6"/><path d="M21 9v6"/><path d="M1 9v6"/><path d="M23 9v6"/></svg>
         </div>
-        <div class="spec-card-name">フィットネス施設</div>
-        <div class="spec-card-desc">館内フィットネスジムで、いつでも気軽にワークアウトを楽しめます。</div>
+        <div class="spec-card-name">健身設施</div>
+        <div class="spec-card-desc">大樓內附設健身房，隨時可在住宅內輕鬆進行運動。</div>
       </div>
-
-      <!-- 常時ゴミ出し可能 -->
       <div class="spec-card">
         <div class="spec-card-icon">
           <svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
         </div>
-        <div class="spec-card-name">常時ゴミ出し可能</div>
-        <div class="spec-card-desc">24時間いつでもゴミを出せる専用ゴミステーションを完備。</div>
+        <div class="spec-card-name">全天候垃圾投放</div>
+        <div class="spec-card-desc">24小時皆可投放垃圾的專用垃圾站，生活更加便利。</div>
       </div>
-
     </div>
   </div>
 </section>
@@ -1149,36 +1299,35 @@ footer{
   <div class="inner">
     <div class="fade-up">
       <span class="section-label">NEIGHBORHOOD</span>
-      <h2 class="section-heading">都心の利便と、<br>豊かな自然が共存する街。</h2>
+      <h2 class="section-heading">都心便利與<br>豐富自然共存的街區。</h2>
       <div class="gold-line"></div>
       <p class="section-body">
-        白金高輪は、駅周辺の利便性に加え、白金商店街、白金アエルシティ、クイーンズ伊勢丹、リンコス白金ザ・スカイ店など日常利便施設が揃うエリア。さらに、有栖川宮記念公園や国立科学博物館附属自然教育園など、都心でありながら自然を感じられる場所も身近にあります。
+        白金高輪一帶在交通便利之外，步行距離內有白金商店街、白金Aeru City、Queens伊勢丹等日常商業設施。同時，有栖川宮記念公園及國立科學博物館附屬自然教育園等綠地公園就在身邊，讓身處都心的您也能感受到豐富的自然氣息。
       </p>
     </div>
-
     <div class="area-layout">
       <div class="fade-up">
         <div class="area-facilities">
-          <div class="area-facility">リンコス白金ザ・スカイ店</div>
-          <div class="area-facility">白金アエルシティ</div>
-          <div class="area-facility">クイーンズ伊勢丹白金高輪店</div>
+          <div class="area-facility">Rincos 白金 The Sky 店</div>
+          <div class="area-facility">白金 Aeru City</div>
+          <div class="area-facility">Queens 伊勢丹白金高輪店</div>
           <div class="area-facility">白金商店街</div>
-          <div class="area-facility">まいばすけっと</div>
-          <div class="area-facility">マツモトキヨシ</div>
-          <div class="area-facility">白金の丘学園</div>
-          <div class="area-facility">古川橋病院</div>
-          <div class="area-facility">北里大学北里研究所病院</div>
+          <div class="area-facility">My Basket 超市</div>
+          <div class="area-facility">Matsumoto Kiyoshi 藥妝</div>
+          <div class="area-facility">白金之丘學園（學校）</div>
+          <div class="area-facility">古川橋醫院</div>
+          <div class="area-facility">北里大學北里研究所醫院</div>
           <div class="area-facility">有栖川宮記念公園</div>
           <div class="area-facility">都立芝公園</div>
-          <div class="area-facility">国立科学博物館附属自然教育園</div>
+          <div class="area-facility">國立科學博物館附屬自然教育園</div>
         </div>
       </div>
       <div class="area-photos fade-up">
         <div class="area-photo tall" onclick="openLB('images/周辺写真/overview.png',gArea)">
-          <img src="images/周辺写真/overview.png" alt="白金高輪 周辺" loading="lazy">
+          <img src="images/周辺写真/overview.png" alt="白金高輪 周邊" loading="lazy">
         </div>
         <div class="area-photo" onclick="openLB('images/周辺写真/shirogane_the_sky.png',gArea)">
-          <img src="images/周辺写真/shirogane_the_sky.png" alt="白金ザ・スカイ周辺" loading="lazy">
+          <img src="images/周辺写真/shirogane_the_sky.png" alt="白金 The Sky 周邊" loading="lazy">
         </div>
         <div class="area-photo" onclick="openLB('images/周辺写真/shizenkyouikuen.png',gArea)">
           <img src="images/周辺写真/shizenkyouikuen.png" alt="自然教育園" loading="lazy">
@@ -1192,24 +1341,24 @@ footer{
 <section id="asset">
   <div class="inner">
     <span class="section-label" style="text-align:center;">ASSET VALUE</span>
-    <h2 class="section-heading" style="text-align:center;">住むためだけではなく、<br>持つ価値も。</h2>
+    <h2 class="section-heading" style="text-align:center;">不僅是居住，<br>更是值得持有的資產。</h2>
     <div class="gold-line" style="margin-inline:auto;"></div>
     <p class="section-body" style="text-align:center;">
-      港区白金アドレス、白金高輪駅徒歩1分という稀少な立地条件。<br>
-      鹿島建設施工・581戸の大規模タワーレジデンスは、資産としての安定性を誇ります。
+      港區白金地址、白金高輪站步行1分鐘的稀有立地條件。<br>
+      鹿島建設施工、581戶大規模塔式住宅，擁有長期穩定的資產價值。
     </p>
     <div class="asset-points">
       <div class="asset-point fade-up">
-        <div><span class="asset-point-num">581</span><span class="asset-point-unit">戸</span></div>
-        <div class="asset-point-label">大規模タワー<br>レジデンス</div>
+        <div><span class="asset-point-num">581</span><span class="asset-point-unit">戶</span></div>
+        <div class="asset-point-label">大規模塔式<br>住宅</div>
       </div>
       <div class="asset-point fade-up">
         <div><span class="asset-point-num">1</span><span class="asset-point-unit">分</span></div>
-        <div class="asset-point-label">白金高輪駅<br>徒歩アクセス</div>
+        <div class="asset-point-label">白金高輪站<br>步行距離</div>
       </div>
       <div class="asset-point fade-up">
         <div><span class="asset-point-num">2023</span></div>
-        <div class="asset-point-label">リフォーム<br>完了年</div>
+        <div class="asset-point-label">翻新<br>完成年份</div>
       </div>
     </div>
   </div>
@@ -1225,80 +1374,80 @@ footer{
     </div>
     <div class="gallery-tabs" role="tablist">
       <button class="gallery-tab active" onclick="switchTab(this,'all')"      role="tab">ALL</button>
-      <button class="gallery-tab"        onclick="switchTab(this,'current')"  role="tab">現況写真</button>
-      <button class="gallery-tab"        onclick="switchTab(this,'interior')" role="tab">インテリアイメージ</button>
-      <button class="gallery-tab"        onclick="switchTab(this,'common')"   role="tab">共用部</button>
-      <button class="gallery-tab"        onclick="switchTab(this,'area')"     role="tab">周辺</button>
+      <button class="gallery-tab"        onclick="switchTab(this,'current')"  role="tab">現況照片</button>
+      <button class="gallery-tab"        onclick="switchTab(this,'interior')" role="tab">室內設計圖</button>
+      <button class="gallery-tab"        onclick="switchTab(this,'common')"   role="tab">公共設施</button>
+      <button class="gallery-tab"        onclick="switchTab(this,'area')"     role="tab">周邊環境</button>
     </div>
 
     <!-- ALL -->
     <div id="tab-all" class="gallery-panel active">
       <div class="g-item" onclick="openLB('images/現状写真/livingdininng.png',gAll)"><img src="images/現状写真/livingdininng.png" alt="LDK 現況" loading="lazy"></div>
       <div class="g-item" onclick="openLB('images/現状写真/livingdininng2.png',gAll)"><img src="images/現状写真/livingdininng2.png" alt="LDK 現況2" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image.png',gAll)"><img src="images/インテリア配置写真/living_image.png" alt="リビング イメージ" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image2.png',gAll)"><img src="images/インテリア配置写真/living_image2.png" alt="リビング イメージ2" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_a.png',gAll)"><img src="images/インテリア配置写真/interior_living_a.png" alt="リビング イメージ3" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_b.png',gAll)"><img src="images/インテリア配置写真/interior_living_b.png" alt="リビング イメージ4" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/現状写真/bedroom.png',gAll)"><img src="images/現状写真/bedroom.png" alt="主寝室 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/bedroom2.png',gAll)"><img src="images/現状写真/bedroom2.png" alt="寝室 現況2" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image.png',gAll)"><img src="images/インテリア配置写真/bedroom_image.png" alt="寝室 イメージ" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image2.png',gAll)"><img src="images/インテリア配置写真/bedroom_image2.png" alt="寝室 イメージ2" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/現状写真/kitchen.png',gAll)"><img src="images/現状写真/kitchen.png" alt="キッチン 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image.png',gAll)"><img src="images/インテリア配置写真/living_image.png" alt="客廳 示意圖" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image2.png',gAll)"><img src="images/インテリア配置写真/living_image2.png" alt="客廳 示意圖2" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_a.png',gAll)"><img src="images/インテリア配置写真/interior_living_a.png" alt="客廳 示意圖3" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_b.png',gAll)"><img src="images/インテリア配置写真/interior_living_b.png" alt="客廳 示意圖4" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/現状写真/bedroom.png',gAll)"><img src="images/現状写真/bedroom.png" alt="主臥室 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/bedroom2.png',gAll)"><img src="images/現状写真/bedroom2.png" alt="臥室 現況2" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image.png',gAll)"><img src="images/インテリア配置写真/bedroom_image.png" alt="臥室 示意圖" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image2.png',gAll)"><img src="images/インテリア配置写真/bedroom_image2.png" alt="臥室 示意圖2" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/現状写真/kitchen.png',gAll)"><img src="images/現状写真/kitchen.png" alt="廚房 現況" loading="lazy"></div>
       <div class="g-item" onclick="openLB('images/現状写真/bathroom.png',gAll)"><img src="images/現状写真/bathroom.png" alt="浴室 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/powderroom.png',gAll)"><img src="images/現状写真/powderroom.png" alt="洗面室 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/toilet.png',gAll)"><img src="images/現状写真/toilet.png" alt="トイレ 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/balcony.png',gAll)"><img src="images/現状写真/balcony.png" alt="バルコニー 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/view.png',gAll)"><img src="images/現状写真/view.png" alt="眺望" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/共用部分/entrance.png',gAll)"><img src="images/共用部分/entrance.png" alt="エントランス" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/共用部分/raunge.png',gAll)"><img src="images/共用部分/raunge.png" alt="ラウンジ" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/共用部分/sportsgim.png',gAll)"><img src="images/共用部分/sportsgim.png" alt="フィットネス" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/周辺写真/overview.png',gAll)"><img src="images/周辺写真/overview.png" alt="周辺 概観" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/周辺写真/shirogane_the_sky.png',gAll)"><img src="images/周辺写真/shirogane_the_sky.png" alt="白金ザ・スカイ周辺" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/powderroom.png',gAll)"><img src="images/現状写真/powderroom.png" alt="盥洗室 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/toilet.png',gAll)"><img src="images/現状写真/toilet.png" alt="廁所 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/balcony.png',gAll)"><img src="images/現状写真/balcony.png" alt="陽台 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/view.png',gAll)"><img src="images/現状写真/view.png" alt="景觀" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/共用部分/entrance.png',gAll)"><img src="images/共用部分/entrance.png" alt="大廳入口" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/共用部分/raunge.png',gAll)"><img src="images/共用部分/raunge.png" alt="休息廳" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/共用部分/sportsgim.png',gAll)"><img src="images/共用部分/sportsgim.png" alt="健身房" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/周辺写真/overview.png',gAll)"><img src="images/周辺写真/overview.png" alt="周邊 概觀" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/周辺写真/shirogane_the_sky.png',gAll)"><img src="images/周辺写真/shirogane_the_sky.png" alt="白金 The Sky 周邊" loading="lazy"></div>
       <div class="g-item" onclick="openLB('images/周辺写真/shizenkyouikuen.png',gAll)"><img src="images/周辺写真/shizenkyouikuen.png" alt="自然教育園" loading="lazy"></div>
     </div>
 
-    <!-- 現況写真 -->
+    <!-- 現況照片 -->
     <div id="tab-current" class="gallery-panel">
       <div class="g-item" onclick="openLB('images/現状写真/livingdininng.png',gCurrent)"><img src="images/現状写真/livingdininng.png" alt="LDK 現況" loading="lazy"></div>
       <div class="g-item" onclick="openLB('images/現状写真/livingdininng2.png',gCurrent)"><img src="images/現状写真/livingdininng2.png" alt="LDK 現況2" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/bedroom.png',gCurrent)"><img src="images/現状写真/bedroom.png" alt="主寝室 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/bedroom2.png',gCurrent)"><img src="images/現状写真/bedroom2.png" alt="寝室 現況2" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/kitchen.png',gCurrent)"><img src="images/現状写真/kitchen.png" alt="キッチン 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/bedroom.png',gCurrent)"><img src="images/現状写真/bedroom.png" alt="主臥室 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/bedroom2.png',gCurrent)"><img src="images/現状写真/bedroom2.png" alt="臥室 現況2" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/kitchen.png',gCurrent)"><img src="images/現状写真/kitchen.png" alt="廚房 現況" loading="lazy"></div>
       <div class="g-item" onclick="openLB('images/現状写真/bathroom.png',gCurrent)"><img src="images/現状写真/bathroom.png" alt="浴室 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/powderroom.png',gCurrent)"><img src="images/現状写真/powderroom.png" alt="洗面室 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/toilet.png',gCurrent)"><img src="images/現状写真/toilet.png" alt="トイレ 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/toilet2.png',gCurrent)"><img src="images/現状写真/toilet2.png" alt="トイレ2 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/balcony.png',gCurrent)"><img src="images/現状写真/balcony.png" alt="バルコニー 現況" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/現状写真/view.png',gCurrent)"><img src="images/現状写真/view.png" alt="眺望" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/powderroom.png',gCurrent)"><img src="images/現状写真/powderroom.png" alt="盥洗室 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/toilet.png',gCurrent)"><img src="images/現状写真/toilet.png" alt="廁所 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/toilet2.png',gCurrent)"><img src="images/現状写真/toilet2.png" alt="廁所2 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/balcony.png',gCurrent)"><img src="images/現状写真/balcony.png" alt="陽台 現況" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/現状写真/view.png',gCurrent)"><img src="images/現状写真/view.png" alt="景觀" loading="lazy"></div>
     </div>
 
-    <!-- インテリアイメージ -->
+    <!-- 室內設計圖 -->
     <div id="tab-interior" class="gallery-panel">
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image.png',gInterior)"><img src="images/インテリア配置写真/living_image.png" alt="リビング イメージ" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image2.png',gInterior)"><img src="images/インテリア配置写真/living_image2.png" alt="リビング イメージ2" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image3.png',gInterior)"><img src="images/インテリア配置写真/living_image3.png" alt="リビング イメージ3" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_a.png',gInterior)"><img src="images/インテリア配置写真/interior_living_a.png" alt="リビング イメージ4" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_b.png',gInterior)"><img src="images/インテリア配置写真/interior_living_b.png" alt="リビング イメージ5" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_c.png',gInterior)"><img src="images/インテリア配置写真/interior_living_c.png" alt="リビング イメージ6" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_d.png',gInterior)"><img src="images/インテリア配置写真/interior_living_d.png" alt="リビング イメージ7" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image.png',gInterior)"><img src="images/インテリア配置写真/bedroom_image.png" alt="寝室 イメージ" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image2.png',gInterior)"><img src="images/インテリア配置写真/bedroom_image2.png" alt="寝室 イメージ2" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image3.png',gInterior)"><img src="images/インテリア配置写真/bedroom_image3.png" alt="寝室 イメージ3" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image4.png',gInterior)"><img src="images/インテリア配置写真/bedroom_image4.png" alt="寝室 イメージ4" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
-      <div class="g-item" onclick="openLB('images/インテリア配置写真/balcony_image.png',gInterior)"><img src="images/インテリア配置写真/balcony_image.png" alt="バルコニー イメージ" loading="lazy"><div class="g-badge">家具配置イメージ</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image.png',gInterior)"><img src="images/インテリア配置写真/living_image.png" alt="客廳 示意圖" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image2.png',gInterior)"><img src="images/インテリア配置写真/living_image2.png" alt="客廳 示意圖2" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/living_image3.png',gInterior)"><img src="images/インテリア配置写真/living_image3.png" alt="客廳 示意圖3" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_a.png',gInterior)"><img src="images/インテリア配置写真/interior_living_a.png" alt="客廳 示意圖4" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_b.png',gInterior)"><img src="images/インテリア配置写真/interior_living_b.png" alt="客廳 示意圖5" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_c.png',gInterior)"><img src="images/インテリア配置写真/interior_living_c.png" alt="客廳 示意圖6" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/interior_living_d.png',gInterior)"><img src="images/インテリア配置写真/interior_living_d.png" alt="客廳 示意圖7" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image.png',gInterior)"><img src="images/インテリア配置写真/bedroom_image.png" alt="臥室 示意圖" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image2.png',gInterior)"><img src="images/インテリア配置写真/bedroom_image2.png" alt="臥室 示意圖2" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image3.png',gInterior)"><img src="images/インテリア配置写真/bedroom_image3.png" alt="臥室 示意圖3" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/bedroom_image4.png',gInterior)"><img src="images/インテリア配置写真/bedroom_image4.png" alt="臥室 示意圖4" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
+      <div class="g-item" onclick="openLB('images/インテリア配置写真/balcony_image.png',gInterior)"><img src="images/インテリア配置写真/balcony_image.png" alt="陽台 示意圖" loading="lazy"><div class="g-badge">家具配置示意圖</div></div>
     </div>
 
-    <!-- 共用部 -->
+    <!-- 公共設施 -->
     <div id="tab-common" class="gallery-panel">
-      <div class="g-item" onclick="openLB('images/共用部分/entrance.png',gCommon)"><img src="images/共用部分/entrance.png" alt="エントランス" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/共用部分/raunge.png',gCommon)"><img src="images/共用部分/raunge.png" alt="ラウンジ" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/共用部分/sportsgim.png',gCommon)"><img src="images/共用部分/sportsgim.png" alt="フィットネス" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/共用部分/entrance.png',gCommon)"><img src="images/共用部分/entrance.png" alt="大廳入口" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/共用部分/raunge.png',gCommon)"><img src="images/共用部分/raunge.png" alt="休息廳" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/共用部分/sportsgim.png',gCommon)"><img src="images/共用部分/sportsgim.png" alt="健身房" loading="lazy"></div>
     </div>
 
-    <!-- 周辺 -->
+    <!-- 周邊環境 -->
     <div id="tab-area" class="gallery-panel">
-      <div class="g-item" onclick="openLB('images/周辺写真/overview.png',gArea)"><img src="images/周辺写真/overview.png" alt="周辺 概観" loading="lazy"></div>
-      <div class="g-item" onclick="openLB('images/周辺写真/shirogane_the_sky.png',gArea)"><img src="images/周辺写真/shirogane_the_sky.png" alt="白金ザ・スカイ周辺" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/周辺写真/overview.png',gArea)"><img src="images/周辺写真/overview.png" alt="周邊 概觀" loading="lazy"></div>
+      <div class="g-item" onclick="openLB('images/周辺写真/shirogane_the_sky.png',gArea)"><img src="images/周辺写真/shirogane_the_sky.png" alt="白金 The Sky 周邊" loading="lazy"></div>
       <div class="g-item" onclick="openLB('images/周辺写真/shizenkyouikuen.png',gArea)"><img src="images/周辺写真/shizenkyouikuen.png" alt="自然教育園" loading="lazy"></div>
     </div>
   </div>
@@ -1311,20 +1460,20 @@ footer{
     <h2 class="section-heading" style="color:var(--ink);">物件概要</h2>
     <div class="gold-line" style="background:var(--gold-dark);"></div>
     <table class="info-table">
-      <tr><th>販売価格</th><td><span class="info-price">23,980万円</span></td></tr>
-      <tr><th>物件名</th><td>白金タワー</td></tr>
-      <tr><th>所在地</th><td>東京都港区白金1丁目</td></tr>
-      <tr><th>交通</th><td>東京メトロ南北線・都営三田線「白金高輪」駅 徒歩1分</td></tr>
-      <tr><th>間取り</th><td>2LDK</td></tr>
-      <tr><th>専有面積</th><td>68.24㎡</td></tr>
-      <tr><th>バルコニー面積</th><td>11.92㎡</td></tr>
-      <tr><th>所在階</th><td>16階（42階建・地下3階付）</td></tr>
-      <tr><th>築年月</th><td>2005年9月</td></tr>
-      <tr><th>構造</th><td>RC造</td></tr>
-      <tr><th>総戸数</th><td>581戸</td></tr>
-      <tr><th>施工会社</th><td>鹿島建設</td></tr>
-      <tr><th>現況</th><td>空室</td></tr>
-      <tr><th>特記事項</th><td>2023年リフォーム済み</td></tr>
+      <tr><th>銷售價格</th><td><span class="info-price">2億3,980萬日圓</span></td></tr>
+      <tr><th>物件名稱</th><td>白金塔（Shirokanedai Tower）</td></tr>
+      <tr><th>所在地</th><td>東京都港區白金1丁目</td></tr>
+      <tr><th>交通</th><td>東京Metro南北線・都營三田線「白金高輪」站 步行1分鐘</td></tr>
+      <tr><th>格局</th><td>2LDK</td></tr>
+      <tr><th>專有面積</th><td>68.24㎡</td></tr>
+      <tr><th>陽台面積</th><td>11.92㎡</td></tr>
+      <tr><th>所在樓層</th><td>16樓（地上42層・地下3層）</td></tr>
+      <tr><th>竣工年月</th><td>2005年9月</td></tr>
+      <tr><th>結構</th><td>RC造（鋼筋混凝土）</td></tr>
+      <tr><th>總戶數</th><td>581戶</td></tr>
+      <tr><th>施工公司</th><td>鹿島建設</td></tr>
+      <tr><th>現況</th><td>空置</td></tr>
+      <tr><th>特記事項</th><td>2023年翻新完畢</td></tr>
     </table>
   </div>
 </section>
@@ -1333,14 +1482,13 @@ footer{
 <section id="contact">
   <div class="inner contact-inner">
     <span class="section-label">CONTACT</span>
-    <h2 class="section-heading">この住まいについて、<br>詳しく聞く。</h2>
+    <h2 class="section-heading">深入了解<br>這個住所。</h2>
     <div class="gold-line"></div>
     <p class="section-body" style="text-align:center;">
-      資料請求・内見予約・ご相談など、お気軽にお問い合わせください。<br>
-      担当者より折り返しご連絡いたします。
+      關於物件詳情、看房預約、購買流程、貸款及稅費等問題，歡迎隨時諮詢。<br>
+      中文工作人員可為您提供協助。
     </p>
 
-    <!-- Formspree endpoint: xdavveyo -->
     <form
       id="contact-form"
       class="contact-form"
@@ -1348,24 +1496,86 @@ footer{
       method="POST"
     >
       <div class="form-group">
-        <label class="form-label" for="name">お名前<span class="req">必須</span></label>
-        <input class="form-input" type="text" id="name" name="name" required placeholder="山田 太郎">
+        <label class="form-label" for="name">姓名<span class="req">必填</span></label>
+        <input class="form-input" type="text" id="name" name="name" required placeholder="王 大明">
       </div>
       <div class="form-group">
-        <label class="form-label" for="email">メールアドレス<span class="req">必須</span></label>
+        <label class="form-label" for="email">電子郵件<span class="req">必填</span></label>
         <input class="form-input" type="email" id="email" name="email" required placeholder="example@email.com">
       </div>
       <div class="form-group">
-        <label class="form-label" for="tel">電話番号<span style="color:rgba(255,255,255,.35);margin-left:6px;font-size:9px;">任意</span></label>
-        <input class="form-input" type="tel" id="tel" name="tel" placeholder="090-0000-0000">
+        <label class="form-label" for="tel">電話號碼<span style="color:rgba(255,255,255,.35);margin-left:6px;font-size:9px;">選填</span></label>
+        <input class="form-input" type="tel" id="tel" name="tel" placeholder="+886-900-000-000">
       </div>
       <div class="form-group">
-        <label class="form-label" for="message">お問い合わせ内容<span class="req">必須</span></label>
-        <textarea class="form-input" id="message" name="message" required placeholder="資料請求・内見・ご相談などご希望の内容をご記入ください"></textarea>
+        <label class="form-label" for="message">諮詢內容<span class="req">必填</span></label>
+        <textarea class="form-input" id="message" name="message" required placeholder="請填寫您的諮詢內容，例如：索取資料、預約看房、購買流程等。"></textarea>
       </div>
-      <input type="hidden" name="_subject" value="【白金タワー】お問い合わせ">
-      <button type="submit" class="btn btn-gold form-submit" onclick="trackCTA('form-submit')">送信する</button>
+      <input type="hidden" name="_subject" value="【白金塔】諮詢">
+      <button type="submit" class="btn btn-gold form-submit" onclick="trackCTA('form-submit')">送出</button>
     </form>
+
+    <!-- WeChat -->
+    <div class="wechat-box">
+      <span class="wechat-box-label">WECHAT CONTACT</span>
+      <div class="wechat-box-title">也可透過 WeChat 諮詢</div>
+      <p class="wechat-box-desc">
+        也可透過 WeChat 諮詢。中文工作人員將為您介紹物件詳情。
+      </p>
+      <div class="wechat-id-block">
+        <div class="wechat-id-name">擔當：清藤たかし</div>
+        <div class="wechat-id-val">WeChat ID：Ido_002</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMPANY INFO ===== -->
+<section id="company">
+  <div class="inner">
+    <div class="company-logo-wrap">
+      <img src="images/ido_logo.png" alt="株式會社 I do ロゴ">
+      <div class="company-license">
+        不動產買賣・租賃・仲介・裝修・建物管理<br>
+        東京都知事（4）第89542號
+      </div>
+    </div>
+    <div class="company-details">
+      <div>
+        <div class="company-name">株式會社 I do（愛度）</div>
+        <div class="company-tagline">以感謝之心，為您服務</div>
+      </div>
+      <table class="company-table">
+        <tr>
+          <th>公司名稱</th>
+          <td>株式會社 I do（愛度）</td>
+        </tr>
+        <tr>
+          <th>不動產執照</th>
+          <td>東京都知事（4）第89542號</td>
+        </tr>
+        <tr>
+          <th>地址</th>
+          <td>〒151-0051<br>東京都澀谷區千駄谷5丁目15番14號 三砂大廈2F</td>
+        </tr>
+        <tr>
+          <th>電話</th>
+          <td><a href="tel:0353684610">03-5368-4610</a></td>
+        </tr>
+        <tr>
+          <th>傳真</th>
+          <td>03-5368-4611</td>
+        </tr>
+        <tr>
+          <th>電子郵件</th>
+          <td><a href="mailto:info@yes-ido.co.jp">info@yes-ido.co.jp</a></td>
+        </tr>
+        <tr>
+          <th>官方網站</th>
+          <td><a href="http://www.yes-ido.co.jp/" target="_blank" rel="noopener">www.yes-ido.co.jp</a></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </section>
 
@@ -1374,60 +1584,59 @@ footer{
   <div class="inner">
     <div class="footer-inner">
       <div>
-        <div class="footer-brand">白金タワー</div>
+        <div class="footer-brand">白金塔</div>
         <div class="footer-address">
-          東京都港区白金1丁目<br>
-          東京メトロ南北線・都営三田線「白金高輪」駅 徒歩1分<br>
-          お問い合わせ：<a href="mailto:id_home219342@yahoo.co.jp" style="color:var(--gold);">id_home219342@yahoo.co.jp</a>
+          東京都港區白金1丁目<br>
+          東京Metro南北線・都營三田線「白金高輪」站 步行1分鐘<br>
+          諮詢：<a href="mailto:id_home219342@yahoo.co.jp" style="color:var(--gold);">id_home219342@yahoo.co.jp</a>
         </div>
       </div>
       <div class="footer-notes">
-        <p>掲載内容は作成時点の情報です。現況と異なる場合は現況を優先します。</p>
-        <p>インテリア画像は家具配置イメージであり、実際の室内状況とは異なる場合があります。</p>
-        <p>徒歩分数は80mを1分として算出しています。</p>
-        <p>成約済みの場合はご容赦ください。</p>
-        <p>2023年リフォーム済みの内容については、資料・現地にてご確認ください。</p>
+        <p>本頁資訊以製作時點為準，如現況有所不同，以現況為準。</p>
+        <p>室內設計圖為家具配置示意圖，與實際室內狀況可能有所不同。</p>
+        <p>步行時間以每80公尺計算為1分鐘。</p>
+        <p>若物件已成交，敬請見諒。</p>
+        <p>2023年翻新詳情，請參閱相關資料或現場確認。</p>
       </div>
     </div>
-    <div class="footer-copy">&copy; 白金タワー 売主専用LP. All rights reserved.</div>
+    <div class="footer-copy">&copy; 白金塔 物件專用LP. All rights reserved.</div>
   </div>
 </footer>
 
 <!-- ===== STICKY CTA ===== -->
 <div id="sticky-cta">
-  <a href="#contact" class="btn btn-outline" onclick="trackCTA('sticky-brochure')">資料請求</a>
-  <a href="#contact" class="btn btn-gold"    onclick="trackCTA('sticky-viewing')">内見予約</a>
-  <a href="#contact" class="btn btn-outline" onclick="trackCTA('sticky-inquiry')">お問い合わせ</a>
+  <a href="#contact" class="btn btn-outline" onclick="trackCTA('sticky-brochure')">索取資料</a>
+  <a href="#contact" class="btn btn-gold"    onclick="trackCTA('sticky-viewing')">預約看房</a>
+  <a href="#contact" class="btn btn-outline" onclick="trackCTA('sticky-inquiry')">立即諮詢</a>
 </div>
 
 <!-- ===== LIGHTBOX ===== -->
 <div id="lightbox" role="dialog" aria-modal="true" onclick="lbBgClose(event)">
-  <button id="lightbox-close" onclick="closeLB()" aria-label="閉じる">&times;</button>
-  <button id="lightbox-prev"  onclick="lbNav(-1)" aria-label="前へ">&#8249;</button>
+  <button id="lightbox-close" onclick="closeLB()" aria-label="關閉">&times;</button>
+  <button id="lightbox-prev"  onclick="lbNav(-1)" aria-label="上一張">&#8249;</button>
   <img id="lightbox-img" src="" alt="">
-  <button id="lightbox-next"  onclick="lbNav(1)"  aria-label="次へ">&#8250;</button>
+  <button id="lightbox-next"  onclick="lbNav(1)"  aria-label="下一張">&#8250;</button>
 </div>
 
 <!-- ===== SUCCESS MODAL ===== -->
 <div id="success-modal" role="dialog" aria-modal="true">
   <div class="success-box">
     <div class="gold-line" style="margin:0 auto 24px;"></div>
-    <p>お問い合わせありがとうございます。<br>担当者よりご連絡いたします。</p>
-    <button class="success-close" onclick="document.getElementById('success-modal').classList.remove('open')">閉じる</button>
+    <p>感謝您的諮詢。<br>我們的工作人員將盡快與您聯繫。</p>
+    <button class="success-close" onclick="document.getElementById('success-modal').classList.remove('open')">關閉</button>
   </div>
 </div>
 
 <div id="error-modal" role="dialog" aria-modal="true">
   <div class="success-box">
     <div class="gold-line" style="margin:0 auto 24px;background:#c0392b;"></div>
-    <p style="color:rgba(255,255,255,.8);">送信に失敗しました。<br>時間をおいて再度お試しください。</p>
-    <button class="success-close" onclick="document.getElementById('error-modal').classList.remove('open')" style="border-color:#c0392b;color:#c0392b;">閉じる</button>
+    <p style="color:rgba(255,255,255,.8);">發送失敗。<br>請稍後再試一次。</p>
+    <button class="success-close" onclick="document.getElementById('error-modal').classList.remove('open')" style="border-color:#c0392b;color:#c0392b;">關閉</button>
   </div>
 </div>
 
 <!-- ===== SCRIPTS ===== -->
 <script>
-/* ===== GALLERY DATA ===== */
 const gAll = [
   'images/現状写真/livingdininng.png','images/現状写真/livingdininng2.png',
   'images/インテリア配置写真/living_image.png','images/インテリア配置写真/living_image2.png',
@@ -1467,7 +1676,7 @@ const gArea = [
   'images/周辺写真/overview.png','images/周辺写真/shirogane_the_sky.png','images/周辺写真/shizenkyouikuen.png',
 ];
 
-/* ===== LIGHTBOX ===== */
+/* LIGHTBOX */
 let lbImages = [], lbIdx = 0;
 function openLB(src, imgs) {
   lbImages = imgs || [src];
@@ -1502,7 +1711,7 @@ document.addEventListener('keydown', e => {
   }, {passive:true});
 })();
 
-/* ===== GALLERY TABS ===== */
+/* GALLERY TABS */
 function switchTab(btn, id) {
   document.querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
   document.querySelectorAll('.gallery-panel').forEach(p => p.classList.remove('active'));
@@ -1510,14 +1719,14 @@ function switchTab(btn, id) {
   document.getElementById('tab-' + id).classList.add('active');
 }
 
-/* ===== CONTACT FORM ===== */
+/* CONTACT FORM */
 (function(){
   const form = document.getElementById('contact-form');
   if(!form) return;
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = form.querySelector('button[type=submit]');
-    btn.textContent = '送信中...'; btn.disabled = true;
+    btn.textContent = '發送中...'; btn.disabled = true;
     try {
       const res = await fetch(form.action, {
         method:'POST', body: new FormData(form),
@@ -1537,17 +1746,17 @@ function switchTab(btn, id) {
     } catch(err) {
       document.getElementById('error-modal').classList.add('open');
     }
-    btn.textContent = '送信する'; btn.disabled = false;
+    btn.textContent = '送出'; btn.disabled = false;
   });
 })();
 
-/* ===== CTA TRACKING ===== */
+/* CTA TRACKING */
 function trackCTA(label) {
   if(typeof gtag !== 'undefined') gtag('event','cta_click',{event_category:'engagement',event_label:label});
   if(window.va) window.va('event',{name:'cta_click',data:{label}});
 }
 
-/* ===== YOUTUBE PLAY TRACKING ===== */
+/* YOUTUBE PLAY TRACKING */
 (function(){
   const tag = document.createElement('script');
   tag.src = 'https://www.youtube.com/iframe_api';
@@ -1570,21 +1779,16 @@ function trackCTA(label) {
   };
 })();
 
-/* ===== SCROLL ANIMATIONS ===== */
+/* SCROLL ANIMATIONS */
 (function(){
-  // fade-up (sections)
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); obs.unobserve(e.target); } });
   }, {threshold:0.1});
   document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 
-  // spec-cards — staggered per card
   const cardObs = new IntersectionObserver(entries => {
     entries.forEach(e => {
-      if(e.isIntersecting){
-        e.target.classList.add('visible');
-        cardObs.unobserve(e.target);
-      }
+      if(e.isIntersecting){ e.target.classList.add('visible'); cardObs.unobserve(e.target); }
     });
   }, {threshold:0.08, rootMargin:'0px 0px -40px 0px'});
 
@@ -1595,7 +1799,7 @@ function trackCTA(label) {
   });
 })();
 
-/* ===== HERO VIDEO CROSSFADE LOOP ===== */
+/* HERO VIDEO CROSSFADE */
 (function(){
   const VIDEOS = [
     'images/インテリア配置写真/hero_video1.mp4',
@@ -1610,14 +1814,11 @@ function trackCTA(label) {
 
   function nextVideo() {
     idx = (idx + 1) % VIDEOS.length;
-    // 次の動画をスタンバイ側にセット
     standby.src = VIDEOS[idx];
     standby.load();
     standby.play().then(() => {
-      // 再生開始 → クロスフェード
       standby.classList.add('active');
       active.classList.remove('active');
-      // フェード完了後に停止してリセット
       const prev = active;
       active = standby;
       standby = prev;
@@ -1625,15 +1826,13 @@ function trackCTA(label) {
     }).catch(() => {});
   }
 
-  // 最初の動画を再生開始
   vidA.play().catch(() => {});
   vidA.addEventListener('ended', nextVideo);
   vidB.addEventListener('ended', nextVideo);
-
   document.getElementById('hero').classList.add('loaded');
 })();
 
-/* ===== SCROLL DEPTH TRACKING ===== */
+/* SCROLL DEPTH TRACKING */
 (function(){
   const marks = [25,50,75,100], fired = new Set();
   window.addEventListener('scroll', () => {
@@ -1647,6 +1846,5 @@ function trackCTA(label) {
   }, {passive:true});
 })();
 </script>
-
 </body>
 </html>
