@@ -1535,7 +1535,7 @@ footer{
 <section id="company">
   <div class="inner">
     <div class="company-logo-wrap">
-      <img src="images/ido_logo.png" alt="株式會社 I do ロゴ">
+      <img src="images/ido_logo.png" alt="株式會社 I do 標誌">
       <div class="company-license">
         不動產買賣・租賃・仲介・裝修・建物管理<br>
         東京都知事（4）第89542號
@@ -1623,7 +1623,7 @@ footer{
 <div id="success-modal" role="dialog" aria-modal="true">
   <div class="success-box">
     <div class="gold-line" style="margin:0 auto 24px;"></div>
-    <p>お問い合わせありがとうございました。<br>担当者よりご連絡いたします。</p>
+    <p>感謝您的諮詢。<br>負責人員將盡快與您聯繫。</p>
     <button class="success-close" onclick="document.getElementById('success-modal').classList.remove('open')">關閉</button>
   </div>
 </div>
@@ -1631,7 +1631,7 @@ footer{
 <div id="error-modal" role="dialog" aria-modal="true">
   <div class="success-box">
     <div class="gold-line" style="margin:0 auto 24px;background:#c0392b;"></div>
-    <p style="color:rgba(255,255,255,.8);">送信に失敗しました。<br>時間をおいて再度お試しください。</p>
+    <p style="color:rgba(255,255,255,.8);">發送失敗。<br>請稍後再試一次。</p>
     <button class="success-close" onclick="document.getElementById('error-modal').classList.remove('open')" style="border-color:#c0392b;color:#c0392b;">關閉</button>
   </div>
 </div>
@@ -1727,7 +1727,7 @@ function switchTab(btn, id) {
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = form.querySelector('button[type=submit]');
-    btn.textContent = '送信中...'; btn.disabled = true;
+    btn.textContent = '發送中...'; btn.disabled = true;
     try {
       const res = await fetch(form.action, {
         method:'POST', body: new FormData(form),
