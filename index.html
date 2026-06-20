@@ -1492,7 +1492,7 @@ footer{
     <form
       id="contact-form"
       class="contact-form"
-      action="https://formspree.io/f/xdavveyo"
+      action="https://formspree.io/f/xnjyelbq"
       method="POST"
     >
       <div class="form-group">
@@ -1512,6 +1512,7 @@ footer{
         <textarea class="form-input" id="message" name="message" required placeholder="請填寫您的諮詢內容，例如：索取資料、預約看房、購買流程等。"></textarea>
       </div>
       <input type="hidden" name="_subject" value="【白金塔】諮詢">
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <button type="submit" class="btn btn-gold form-submit" onclick="trackCTA('form-submit')">送出</button>
     </form>
 
@@ -1622,7 +1623,7 @@ footer{
 <div id="success-modal" role="dialog" aria-modal="true">
   <div class="success-box">
     <div class="gold-line" style="margin:0 auto 24px;"></div>
-    <p>感謝您的諮詢。<br>我們的工作人員將盡快與您聯繫。</p>
+    <p>お問い合わせありがとうございました。<br>担当者よりご連絡いたします。</p>
     <button class="success-close" onclick="document.getElementById('success-modal').classList.remove('open')">關閉</button>
   </div>
 </div>
@@ -1630,7 +1631,7 @@ footer{
 <div id="error-modal" role="dialog" aria-modal="true">
   <div class="success-box">
     <div class="gold-line" style="margin:0 auto 24px;background:#c0392b;"></div>
-    <p style="color:rgba(255,255,255,.8);">發送失敗。<br>請稍後再試一次。</p>
+    <p style="color:rgba(255,255,255,.8);">送信に失敗しました。<br>時間をおいて再度お試しください。</p>
     <button class="success-close" onclick="document.getElementById('error-modal').classList.remove('open')" style="border-color:#c0392b;color:#c0392b;">關閉</button>
   </div>
 </div>
@@ -1726,7 +1727,7 @@ function switchTab(btn, id) {
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
     const btn = form.querySelector('button[type=submit]');
-    btn.textContent = '發送中...'; btn.disabled = true;
+    btn.textContent = '送信中...'; btn.disabled = true;
     try {
       const res = await fetch(form.action, {
         method:'POST', body: new FormData(form),
