@@ -1742,16 +1742,9 @@ function switchTab(btn, id) {
         form.reset();
         if(typeof gtag !== 'undefined') {
           gtag('event','form_submit',{event_category:'contact',event_label:'inquiry'});
-          /* GA4: Formspree送信成功時点のリード獲得イベント */
-          gtag('event','generate_lead',{
-            event_category:'contact',
-            event_label:'inquiry',
-            currency:'JPY',
-            value:0
-          });
         }
         if(window.va) window.va('event',{name:'form_submit'});
-        /* Google Adsコンバージョンは /thanks 到達時に発火（thanks.html参照） */
+        /* generate_lead / Google Adsコンバージョンは /thanks 到達時のみ発火（thanks.html参照、二重計測防止） */
         window.location.href = '/thanks';
         return;
       } else {
