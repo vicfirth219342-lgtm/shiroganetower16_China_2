@@ -746,7 +746,8 @@ textarea.form-input{ resize:vertical;min-height:120px; }
   display:flex;flex-direction:column;align-items:flex-start;gap:14px;
 }
 .company-logo-wrap img{
-  width:clamp(160px,20vw,220px);filter:brightness(0) invert(1);opacity:.85;
+  width:clamp(160px,20vw,220px);height:auto;object-fit:contain;
+  background:transparent;filter:none;opacity:1;mix-blend-mode:normal;
 }
 .company-license{
   font-family:var(--sans);font-size:10px;letter-spacing:.08em;
