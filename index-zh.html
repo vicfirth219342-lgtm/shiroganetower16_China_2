@@ -18,12 +18,14 @@
 <!-- Vercel Analytics -->
 <script defer src="/_vercel/insights/script.js"></script>
 
-<!-- Google Ads Conversion -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18240219163"></script>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+  /* Google Ads（既存のコンバージョン計測タグと連携） */
   gtag('config', 'AW-18240219163');
 </script>
 
@@ -1740,6 +1742,13 @@ function switchTab(btn, id) {
         if(typeof gtag !== 'undefined') {
           gtag('event','conversion',{send_to:'AW-18240219163'});
           gtag('event','form_submit',{event_category:'contact',event_label:'inquiry'});
+          /* GA4: 問い合わせ送信＝リード獲得イベント（Google広告のコンバージョンインポートにも利用可能） */
+          gtag('event','generate_lead',{
+            event_category:'contact',
+            event_label:'inquiry',
+            currency:'JPY',
+            value:0
+          });
         }
         if(window.va) window.va('event',{name:'form_submit'});
       } else {
