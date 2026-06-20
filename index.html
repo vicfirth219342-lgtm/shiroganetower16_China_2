@@ -18,15 +18,17 @@
 <!-- Vercel Analytics -->
 <script defer src="/_vercel/insights/script.js"></script>
 
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GT-WVGMTXML"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-  /* Google Ads（既存のコンバージョン計測タグと連携） */
+  gtag('config', 'GT-WVGMTXML');
+  /* Google Ads（コンバージョンは /thanks 到達時に計測） */
   gtag('config', 'AW-18240219163');
+  /* GA4 */
+  gtag('config', 'G-XXXXXXXXXX');
 </script>
 
 <style>
@@ -1737,20 +1739,14 @@ function switchTab(btn, id) {
         headers:{'Accept':'application/json'}
       });
       if(res.ok) {
-        document.getElementById('success-modal').classList.add('open');
         form.reset();
         if(typeof gtag !== 'undefined') {
-          gtag('event','conversion',{send_to:'AW-18240219163'});
           gtag('event','form_submit',{event_category:'contact',event_label:'inquiry'});
-          /* GA4: 問い合わせ送信＝リード獲得イベント（Google広告のコンバージョンインポートにも利用可能） */
-          gtag('event','generate_lead',{
-            event_category:'contact',
-            event_label:'inquiry',
-            currency:'JPY',
-            value:0
-          });
         }
         if(window.va) window.va('event',{name:'form_submit'});
+        /* コンバージョン計測は /thanks 到達時に発火（thanks.html参照） */
+        window.location.href = '/thanks';
+        return;
       } else {
         document.getElementById('error-modal').classList.add('open');
       }
